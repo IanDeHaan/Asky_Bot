@@ -3,7 +3,7 @@ import requests
 import random
 
 def query(q):
-    response = requests.get("https://api.asky.io/art")
+    response = requests.get("https://asky.io/api/v1/art")
     emotes = json.loads(response.text)
     valid = []
     for emote in emotes:
